@@ -1,8 +1,4 @@
-
-<h1>Edit article</h1>
- 
-<%= form_with(model: @article, local: true) do |form| %>
- 
+<%= form_with model: @article, local: true do |form| %>
   <% if @article.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -32,7 +28,3 @@
   </p>
  
 <% end %>
-
-<%= render 'form' %>
- 
-<%= link_to 'Back', articles_path %>
